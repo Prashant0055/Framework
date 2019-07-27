@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting Up reports and Test is getting ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting Done- Test can be Started]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start Browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >> Reports generated]]>
+    </line>
+    <line>
+      <![CDATA[Trying to Close Browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser is Closed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42589" started-at="2019-07-27T13:28:06Z" finished-at="2019-07-27T13:28:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42589" started-at="2019-07-27T13:28:06Z" finished-at="2019-07-27T13:28:48Z">
+      <class name="com.learnmaven.TestCase.TestFacebookWithFramework">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044]" name="setUpSuite" is-config="true" duration-ms="1267" started-at="2019-07-27T18:58:04Z" finished-at="2019-07-27T18:58:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting Up reports and Test is getting ready]]>
+            </line>
+            <line>
+              <![CDATA[Setting Done- Test can be Started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044]" name="setUp" is-config="true" duration-ms="13243" started-at="2019-07-27T18:58:06Z" finished-at="2019-07-27T18:58:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start Browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="LoginApp()[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044]" name="LoginApp" duration-ms="16480" started-at="2019-07-27T18:58:19Z" finished-at="2019-07-27T18:58:35Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 747b782a158b9ef1f7d0fb85550a8dfa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=75.0.3770.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRASHANT', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 747b782a158b9ef1f7d0fb85550a8dfa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.learnmaven.Pages.loginPage.loginToFB(loginPage.java:26)
+	at com.learnmaven.TestCase.TestFacebookWithFramework.LoginApp(TestFacebookWithFramework.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApp -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044]" name="tearDown" is-config="true" duration-ms="11947" started-at="2019-07-27T18:58:35Z" finished-at="2019-07-27T18:58:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginApp status=FAILURE method=TestFacebookWithFramework.LoginApp()[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >> Reports generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.learnmaven.TestCase.TestFacebookWithFramework@724af044]" name="shutDown" is-config="true" duration-ms="861" started-at="2019-07-27T18:58:47Z" finished-at="2019-07-27T18:58:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to Close Browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser is Closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.learnmaven.TestCase.TestFacebookWithFramework -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
