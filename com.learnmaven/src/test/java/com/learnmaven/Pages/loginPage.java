@@ -9,8 +9,7 @@ import org.openqa.selenium.support.FindBy;
 public class loginPage {
 	
 	WebDriver driver;
-	
-	//push to GIT
+
 	public loginPage(WebDriver ldriver) 
 	{
 		this.driver=ldriver;
